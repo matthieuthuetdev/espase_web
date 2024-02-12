@@ -6,7 +6,6 @@ if(isset($_GET["p"])){
     $p = "home";
 }
 $fichier = scandir($template);
-var_dump($fichier);
 ob_start();
 foreach($fichier as $file){
     if($file === "." || $file === ".." || $file === "base.php"){
@@ -21,3 +20,4 @@ foreach($fichier as $file){
 }
 $element = ob_get_clean();
 require($template."base.php");
+}

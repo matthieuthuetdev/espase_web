@@ -20,4 +20,4 @@ foreach($fichier as $file){
 }
 $element = ob_get_clean();
 require($template."base.php");
-}
+

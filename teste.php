@@ -1,5 +1,4 @@
 <?php
-while(true){
 $contenu = file_get_contents("./data.json");
 if($contenu === false){
     $users = array();
@@ -16,4 +15,4 @@ $users["users"][] = array(
 
 $fichier = json_encode($users);
 file_put_contents("./data.json", $fichier);
-}
+?>

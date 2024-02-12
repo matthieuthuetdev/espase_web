@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Doe",
+      "first_name": "John",
+      "pseudo_name": "JDoe",
+      "password": "$2y$10$1TTpmSUakbkCXsmcqfbEJePKR1sX2TnKEBYCZJDrWETt1qtBvugC2"
+    },
+    {
+      "name": "Doe",
+      "first_name": "John",
+      "pseudo_name": "JDoe",
+      "password": "$2y$10$G1TfbJ9lxIfq6tzcxumlN.J3Nt2C15CT33/NEJLL9kt4ncIerzQq6"
+    },
+    {
+      "name": "Doe",
+      "first_name": "John",
+      "pseudo_name": "JDoe",
+      "password": "$2y$10$PaRSshqowPSBfultitQMdu5PyJQVaNBPvrB3SZXSujvQRBqNrxqhS"
+    }
+  ]
+}

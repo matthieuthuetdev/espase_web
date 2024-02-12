@@ -8,7 +8,6 @@ if($contenu === false){
 }
 
 $users["users"][] = array(
-    "id" => 1,
     "name" => "Doe",
     "first_name" => "John",
     "pseudo_name" => "JDoe",

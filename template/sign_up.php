@@ -10,5 +10,6 @@ if(strpos($email,"arfp.asso.fr") === false ){
 }elseif($password !== $confirme_password){
     echo "Le mot de passe que vous avez saisi et le mot de passe confirmer ne sont pas identique.";
 }else{
-    
+    $data = json_decode(file_get_contents("./../data.json"),true);
+    $data["users"]
 }

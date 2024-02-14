@@ -6,10 +6,10 @@ if($contenu === false){
     $users = json_decode($contenu, true);
 }
 
-$users["users"][] = array(
+$users["users"]["Mtbg68"] = array(
     "name" => "Doe",
     "first_name" => "John",
-    "pseudo_name" => "JDoe",
+    "email" => "mattmatt.thuet@arfp.asso.fr",
     "password" => password_hash("JohnDoe123", PASSWORD_DEFAULT)
 );
 

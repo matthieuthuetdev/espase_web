@@ -1,1 +1,24 @@
-null
+{
+  "users": {
+    "0": {
+      "name": "Doe",
+      "first_name": "John",
+      "pseudo_name": "Mtbg68528",
+      "email": "mattmatt.thuet@arfp.asso.fr",
+      "password": "$2y$10$Bsq6z14EslNmrcvzlAhG7uRO/xaM6lNd/EcxOO78OL1ny5375EVdK"
+    },
+    "1": {
+      "name": "Doe",
+      "first_name": "John",
+      "pseudo_name": "Mtbg685281515",
+      "email": "mattmatt.thuet@arfp.asso.fr",
+      "password": "$2y$10$8C.L0plLdJzPJ5oPOVdAwOJeNq/9c072vnqitkJv0JmZC6E25/HZK"
+    },
+    "Mtbg68": {
+      "name": "Doe",
+      "first_name": "John",
+      "email": "mattmatt.thuet@arfp.asso.fr",
+      "password": "$2y$10$Mp7i39q0ZmXu1pSrF6ntne0LL5H3T9v/ZQLHyhrcn0av57hZ7lPlG"
+    }
+  }
+}

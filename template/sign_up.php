@@ -1,12 +1,12 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = trim($_POST['name']);
-    $first_name = trim($_POST['first_name']);
-    $pseudo_name = trim($_POST['pseudo_name']);
-    $email = trim($_POST['email']);
-    $password = $_POST['password'];
-    $confirme_password = $_POST['confirme_password'];
+$name = isset($_POST['name']) ? trim($_POST['name']) : '';
+$first_name = isset($_POST['first_name']) ? trim($_POST['first_name']) : '';
+$pseudo_name = isset($_POST['pseudo_name']) ? trim($_POST['pseudo_name']) : '';
+$email = isset($_POST['email']) ? trim($_POST['email']) : '';
+$password = isset($_POST['password']) ? $_POST['password'] : '';
+$confirme_password = isset($_POST['confirme_password']) ? $_POST['confirme_password'] : '';
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $file = file_get_contents("./../data.json");
     $data = json_decode($file, true);
 
@@ -45,9 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="pseudo_name">Nom d'utilisateur</label><br>
     <input type="text" id="pseudo_name" name="pseudo_name" value="<?php echo $pseudo_name; ?>"><br>
     <label for="email">Adresse email</label><br>
-    <input type="text" id="email" name="email"value <?php echo $email; ?>><br>
+    <input type="text" id="email" name="email" value="<?php echo $email; ?>"><br>
     <label for="password">Mot de passe</label><br>
-    <input type="password" id="password" name="password"value<?php echo $password; ?>><br>
+    <input type="password" id="password" name="password" value="<?php echo $password; ?>"><br>
     <label for="confirme_password">Confirmez le mot de passe</label><br>
     <input type="password" id="confirme_password" name="confirme_password" value="<?php echo $confirme_password; ?>"><br>
     <button type="submit">S'inscrire</button>

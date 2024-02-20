@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-fr">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
+                <li><a href="index.php?p=home">Accueil</a></li>
                 <li><a href="index.php?p=sign_up">S'inscrire</a></li>
             </ul>
         </nav>

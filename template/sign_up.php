@@ -17,6 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
         }
     }
+$email_dispo = true ;
+    foreach ($data['users'] as $user) {
+        if (isset($user['email']) && $user['email'] === $email) {
+            $email_dispo = false;
+            break;
+        }
+    }
 
     if (!strpos($email, "arfp.asso.fr")) {
         echo "Ce service est réservé aux étudiants du CRM.";
@@ -24,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Le mot de passe que vous avez saisi et le mot de passe confirmé ne sont pas identiques.";
     } elseif (!$pseudo_dispo) {
         echo "Le nom d'utilisateur que vous avez saisi est déjà utilisé. Essayez-en un autre.";
+    } elseif (!$email_dispo) {
+        echo "un compte a déjà été créé avec cette adresse mail.";
     } else {
         $data['users'][] = array(
             "name" => $name,
